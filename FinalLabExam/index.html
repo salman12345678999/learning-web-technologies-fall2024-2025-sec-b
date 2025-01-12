@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Online Shop Management System</h1>
+
+    <h2>Register New Employee</h2>
+    <form id="registerForm">
+        <input type="text" id="name" placeholder="Employee Name" required>
+        <input type="text" id="contact" placeholder="Contact No" required>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Register</button>
+    </form>
+
+    <h2>Update Employee Info</h2>
+    <form id="updateForm">
+        <input type="number" id="updateId" placeholder="Employee ID" required>
+        <input type="text" id="updateName" placeholder="New Employee Name">
+        <input type="text" id="updateContact" placeholder="New Contact No">
+        <input type="text" id="updateUsername" placeholder="New Username">
+        <input type="password" id="updatePassword" placeholder="New Password">
+        <button type="submit">Update</button>
+    </form>
+
+    <h2>Delete Employee</h2>
+    <form id="deleteForm">
+        <input type="number" id="deleteId" placeholder="Employee ID" required>
+        <button type="submit">Delete</button>
+    </form>
+
+    <h2>Search Employee</h2>
+    <input type="text" id="searchQuery" placeholder="Search by name">
+    <button id="searchBtn">Search</button>
+    <div id="searchResults"></div>
+</body>
+</html>
